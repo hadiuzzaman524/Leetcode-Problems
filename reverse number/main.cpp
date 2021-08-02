@@ -14,12 +14,16 @@ public:
         while(newvalue!=0)
         {
 
-         if(result>INT_MAX||result<INT_MIN){
-            return 0;
-         }else{
-             result=result*10+newvalue%10;
-            newvalue=newvalue/10;
-         }
+        // ensure that the result is 32 bit integer
+            if(result>INT_MAX/10||result<INT_MIN/10)
+            {
+                return 0;
+            }
+            else
+            {
+                result=result*10+newvalue%10;
+                newvalue=newvalue/10;
+            }
 
         }
 
