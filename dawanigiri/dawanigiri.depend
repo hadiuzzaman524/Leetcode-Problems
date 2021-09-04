@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630071439 source:e:\leetcode-problems\dawanigiri\main.cpp
+	<stdio.h>
+	<bits/stdc++.h>
+
